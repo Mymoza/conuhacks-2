@@ -8,10 +8,11 @@
 </head>
 <body>
 
-<%= yield %>
+
 
 
 <div class="container">
+  <h3>allo</h3>
   <% flash.each do |key, value| %>
     <div class="alert alert-<%= key %>">
       <%= value %>
@@ -23,7 +24,7 @@
 
 <div class="container">
     <h1><%= yield :header %></h1>
-  <%= yield %>
+  <%= yield %> // C'est ça qui fait un form dans /users/sign_up
 </div>
 
 
